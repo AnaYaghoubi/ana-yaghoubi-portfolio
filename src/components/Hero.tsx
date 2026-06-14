@@ -13,7 +13,7 @@ const Hero = () => {
           </h1>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl text-text-primary">Software Developer</h2>
           <p className="text-text-secondary text-lg max-w-xl leading-relaxed">
-            Creating responsive web applications and digital solutions with a focus on usability, structure, and maintainable code.
+            Building responsive web applications and digital solutions with a focus on usability, structure, and maintainable code
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-2 w-full sm:w-auto">
