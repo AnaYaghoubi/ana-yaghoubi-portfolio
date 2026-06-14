@@ -29,7 +29,7 @@ const Home = () => {
       'name': 'Ana Yaghoubi',
       'jobTitle': 'Software Developer',
       'url': window.location.origin,
-      'description': 'Software Developer creating responsive, structured web applications with a focus on usability and maintainable code.',
+      'description': 'Software Developer building responsive web applications and digital solutions with a focus on usability, structure, and maintainable code',
       'sameAs': [
         'https://github.com/AnaYaghoubi',
         'https://linkedin.com/in/ana-yaghoubi'
