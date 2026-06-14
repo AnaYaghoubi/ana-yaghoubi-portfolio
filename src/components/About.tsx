@@ -19,7 +19,7 @@ const About = () => {
             </p>
 
             <p>
-              I enjoy breaking down complex problems into structured, manageable solutions. This analytical mindset helped me graduate with distinction in Programming and continues to shape the way I approach software development.
+              Breaking down complex problems into structured, manageable solutions is one of the things I enjoy most about development. This analytical mindset helped me graduate with distinction in Programming and continues to shape the way I approach software development.
             </p>
 
             <p>
@@ -27,7 +27,7 @@ const About = () => {
             </p>
 
             <p>
-              Through my projects and internship experience, I’ve worked across different stages of the development lifecycle from analysis and implementation to testing and documentation while continuously strengthening my technical and problem-solving skills in real-world development environments.
+              Through my projects and internship experience, I’ve worked across different stages of the development lifecycle, from analysis and implementation to testing and documentation, while continuously strengthening my technical and problem-solving skills in real-world development environments.
             </p>
           </div>
         </div>
