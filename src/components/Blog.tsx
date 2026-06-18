@@ -7,7 +7,7 @@ import { useSEO } from '../hooks/useSEO';
 const Blog = () => {
   useSEO({
     title: 'Internship Journey | Ana Yaghoubi',
-    description: 'Documenting my internship experience, frontend development, CMS development, and technical learnings.'
+    description: 'Technical learnings, project insights, and experiences from my software development journey.'
   });
 
   const [searchQuery, setSearchQuery] = useState('');

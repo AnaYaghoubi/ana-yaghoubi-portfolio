@@ -12,6 +12,10 @@ const Skills = () => {
       skills: ["Node.js", "Express", ".NET", "C#", "MySQL", "REST APIs"]
     },
     {
+      title: "AI & Automation",
+      skills: ["AI-Assisted Development", "Prompt Engineering", "Workflow Automation"]
+    },
+    {
       title: "CMS & Platforms",
       skills: ["WordPress", "Strapi", "HubSpot", "HubDB", "HubL"]
     },
@@ -20,12 +24,8 @@ const Skills = () => {
       skills: ["Power Apps", "Power Automate", "Dataverse"]
     },
     {
-      title: "Testing",
-      skills: ["Unit Testing", "Integration Testing"]
-    },
-    {
-      title: "Tools & Others",
-      skills: ["Git", "GitHub", "Figma", "Vercel", "Docker", "Agile", "Scrum"]
+      title: "Testing & Tools",
+      skills: ["Unit Testing", "Integration Testing", "Git", "GitHub", "Figma", "Vercel", "Docker", "Agile", "Scrum"]
     }
   ];
 

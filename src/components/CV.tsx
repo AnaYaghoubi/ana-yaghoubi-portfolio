@@ -16,7 +16,8 @@ const PageWrapper = ({ children, className = "" }: { children: React.ReactNode, 
 const CV = () => {
   useSEO({
     title: 'Ana_Yaghoubi_CV_EN',
-    description: 'Curriculum Vitae of Ana Yaghoubi, showcasing experience in React, TypeScript, ASP.NET Core, CMS development, and modern web application development.'
+    description: 'Curriculum Vitae of Ana Yaghoubi, showcasing experience in React, TypeScript, ASP.NET Core, CMS development, and modern web application development.',
+    noindex: true
   });
 
   const handlePrint = () => {
@@ -131,6 +132,7 @@ const CV = () => {
               <div className="space-y-2.5 text-[11px] print:text-[10px] leading-relaxed text-slate-200">
                 <p><strong className="text-white block mb-0.5">Front-end:</strong> JavaScript, TypeScript, React.js, Next.js, HTML, CSS, Tailwind, Alpine.js, Splide.js</p>
                 <p><strong className="text-white block mb-0.5">Back-end & APIs:</strong> Node.js, Express, .NET, C#, REST APIs</p>
+                <p><strong className="text-white block mb-0.5">AI & Automation:</strong> AI-Assisted Development, Prompt Engineering, Workflow Automation</p>
                 <p><strong className="text-white block mb-0.5">Power Platform:</strong> Power Apps, Power Automate, Dataverse</p>
                 <p><strong className="text-white block mb-0.5">Testing:</strong> Unit Testing, Integration Testing</p>
                 <p><strong className="text-white block mb-0.5">Tools & Platforms:</strong> Docker, Vercel, GitHub, Strapi, WordPress, HubSpot, Figma</p>

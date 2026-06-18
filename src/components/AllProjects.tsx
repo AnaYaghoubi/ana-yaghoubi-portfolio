@@ -10,8 +10,8 @@ const Github = ({ size = 20 }: { size?: number }) => (
 
 const AllProjects = () => {
   useSEO({
-    title: 'Web Development Projects | Ana Yaghoubi',
-    description: 'Explore the full portfolio of software projects and development work completed by Ana Yaghoubi.'
+    title: 'Projects | Ana Yaghoubi',
+    description: 'Explore software projects focused on web development, problem-solving, and practical digital solutions.'
   });
 
   const [searchQuery, setSearchQuery] = useState('');

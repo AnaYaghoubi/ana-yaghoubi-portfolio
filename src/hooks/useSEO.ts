@@ -7,9 +7,10 @@ interface SEOProps {
   imageUrl?: string;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   jsonLd?: Record<string, any> | Record<string, any>[];
+  noindex?: boolean;
 }
 
-export const useSEO = ({ title, description, type = 'website', imageUrl, jsonLd }: SEOProps) => {
+export const useSEO = ({ title, description, type = 'website', imageUrl, jsonLd, noindex = false }: SEOProps) => {
   const jsonLdString = jsonLd ? JSON.stringify(jsonLd) : '';
 
   useEffect(() => {
@@ -64,11 +65,24 @@ export const useSEO = ({ title, description, type = 'website', imageUrl, jsonLd 
       jsonLdScript.remove();
     }
 
+    // 6. Handle noindex
+    let robotsMeta = document.querySelector('meta[name="robots"]');
+    if (noindex) {
+      if (!robotsMeta) {
+        robotsMeta = document.createElement('meta');
+        robotsMeta.setAttribute('name', 'robots');
+        document.head.appendChild(robotsMeta);
+      }
+      robotsMeta.setAttribute('content', 'noindex, nofollow');
+    } else if (robotsMeta) {
+      robotsMeta.remove();
+    }
+
     // Cleanup on unmount or dependency update
     return () => {
       if (jsonLdScript) {
         jsonLdScript.remove();
       }
     };
-  }, [title, description, type, imageUrl, jsonLdString]);
+  }, [title, description, type, imageUrl, jsonLdString, noindex]);
 };

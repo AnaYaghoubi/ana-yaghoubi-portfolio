@@ -1,9 +1,9 @@
-import { User, Sparkles, Code2, Layout, Users, Brain, Server } from 'lucide-react';
+import { User, Sparkles, Code2, Layout, Users, Brain, Server, Cpu } from 'lucide-react';
 
 const About = () => {
   return (
     <section id="about" className="py-8 px-6 overflow-hidden">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[45%_55%] gap-8">
         {/* About Me */}
         <div className="card space-y-6 reveal">
           <div className="flex items-center gap-3">
@@ -51,26 +51,32 @@ const About = () => {
             <FeatureItem
               icon={<Server size={20} />}
               title="Backend Developer"
-              desc="Working with .NET, C#, Express, REST APIs, and relational databases to build structured backend solutions."
+              desc="Building structured backend solutions with .NET and REST APIs."
               delay="delay-200"
             />
             <FeatureItem
               icon={<Layout size={20} />}
-              title="CMS & Low-code Experience"
-              desc="Working with WordPress, HubSpot and Power Platform to build and manage scalable solutions."
+              title="CMS & Low-code Development"
+              desc="Creating scalable solutions with WordPress, HubSpot and Power Platform."
               delay="delay-300"
+            />
+            <FeatureItem
+              icon={<Cpu size={20} />}
+              title="AI-Assisted Development"
+              desc="Combining software development fundamentals with AI-assisted workflows to analyze problems, explore solutions, and build software more efficiently."
+              delay="delay-400"
             />
             <FeatureItem
               icon={<Brain size={20} />}
               title="Analytical Problem Solver"
               desc="Able to analyze requirements and break down complex challenges into clean, structured solutions."
-              delay="delay-400"
+              delay="delay-500"
             />
             <FeatureItem
               icon={<Users size={20} />}
               title="Collaborative & Continuous Learner"
               desc="Continuously learning, adapting to new technologies, and collaborating effectively in Agile teams."
-              delay="delay-500"
+              delay="delay-600"
             />
           </div>
         </div>

@@ -26,7 +26,7 @@ const Projects = () => {
 
   const minSwipeDistance = 50;
 
-  // My solution (Working)
+  // Carousel
   const [activeSlide, setActiveSlide] = useState(1);
   const [isTransitioning, setIsTransitioning] = useState(true);
 
@@ -68,7 +68,7 @@ const Projects = () => {
     }
   }, [isTransitioning]);
 
-  // here
+
 
   useEffect(() => {
     if (!isTransitioning) {

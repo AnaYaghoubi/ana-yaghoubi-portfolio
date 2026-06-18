@@ -21,15 +21,15 @@ import { useSEO } from './hooks/useSEO';
 
 const Home = () => {
   useSEO({
-    title: 'Ana Yaghoubi | Software Developer Portfolio',
-    description: 'Building responsive web applications and digital solutions with a focus on usability, structure, and maintainable code',
+    title: 'Ana Yaghoubi | Software Developer',
+    description: 'Building practical digital solutions through software development, problem-solving, and modern technologies',
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'Person',
       'name': 'Ana Yaghoubi',
       'jobTitle': 'Software Developer',
       'url': window.location.origin,
-      'description': 'Building responsive web applications and digital solutions with a focus on usability, structure, and maintainable code',
+      'description': 'Building practical digital solutions through software development, problem-solving, and modern technologies',
       'sameAs': [
         'https://github.com/AnaYaghoubi',
         'https://linkedin.com/in/ana-yaghoubi'
